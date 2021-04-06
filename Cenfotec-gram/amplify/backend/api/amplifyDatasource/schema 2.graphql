@@ -1,0 +1,28 @@
+type Comment @model @auth(rules: [{allow: private}]) @key(name: "byPicture", fields: ["pictureID"]) {
+  id: ID!
+  body: String!
+  author: String
+  date: String
+  title: String
+  pictureID: ID
+}
+
+type User @model @auth(rules: [{allow: private}]) {
+  id: ID!
+  username: String!
+  name: String
+  nick: String
+  age: Int
+  avatarKey: String
+  Pictures_By_User: [Picture] @connection(keyName: "byUser", fields: ["id"])
+}
+
+type Picture @model @auth(rules: [{allow: private}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  imageKey: String!
+  likes: Int
+  uploadDate: String
+  userID: ID
+  Comments_By_Picture: [Comment] @connection(keyName: "byPicture", fields: ["id"])
+}
+ 

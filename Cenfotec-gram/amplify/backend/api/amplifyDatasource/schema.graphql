@@ -1,0 +1,28 @@
+type Comment @model @key(name: "byPicture", fields: ["pictureID"]) {
+  id: ID!
+  body: String!
+  author: String
+  date: String
+  title: String
+  pictureID: ID
+}
+
+type User @model {
+  id: ID!
+  username: String!
+  name: String
+  nick: String
+  age: Int
+  avatarKey: String
+  Pictures_By_User: [Picture] @connection(keyName: "byUser", fields: ["id"])
+}
+
+type Picture @model @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  imageKey: String!
+  likes: Int
+  uploadDate: String
+  userID: ID
+  Comments_By_Picture: [Comment] @connection(keyName: "byPicture", fields: ["id"])
+}
+ 

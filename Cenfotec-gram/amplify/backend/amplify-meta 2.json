@@ -1,0 +1,80 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cenfotec-gram-staging-213903-authRole",
+      "UnauthRoleArn": "arn:aws:iam::230395879055:role/amplify-cenfotec-gram-staging-213903-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::230395879055:role/amplify-cenfotec-gram-staging-213903-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cenfotec-gram-staging-213903-deployment",
+      "UnauthRoleName": "amplify-cenfotec-gram-staging-213903-unauthRole",
+      "StackName": "amplify-cenfotec-gram-staging-213903",
+      "StackId": "arn:aws:cloudformation:us-east-1:230395879055:stack/amplify-cenfotec-gram-staging-213903/a40acfb0-9689-11eb-bcc6-0adc8babde53",
+      "AmplifyAppId": "d2qywzdh617rn0"
+    }
+  },
+  "api": {
+    "amplifyDatasource": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ],
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authcenfotecgram16305ad1_userpool_16305ad1"
+            }
+          }
+        },
+        "GraphQLAPIIdOutput": "szadpuwudrdxxlv5dvif6zzmaa",
+        "GraphQLAPIEndpointOutput": "https://45ra6towybbv5khi6yly5xzgpq.appsync-api.us-east-1.amazonaws.com/graphql"
+      },
+      "lastPushTimeStamp": "2021-04-06T04:03:13.737Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cenfotec-gram-staging-213903-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiamplifyDatasource"
+      },
+      "lastPushDirHash": "nP7bcJrGNlpGixvo22U19upj0ro="
+    }
+  },
+  "auth": {
+    "cenfotecgram16305ad1": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "output": {
+        "UserPoolId": "us-east-1_y1FyYGUR3",
+        "AppClientIDWeb": "2n9nqmo3eni0pd6bu0isk3pmkq",
+        "AppClientID": "1r2cpda5rrm3r6fa5mtsu005t4",
+        "IdentityPoolId": "us-east-1:b7599c0e-1f9a-4ea0-8ca8-ebe4ddc9b54e",
+        "IdentityPoolName": "cenfotecgram16305ad1_identitypool_16305ad1__staging",
+        "UserPoolName": "cenfotecgram16305ad1_userpool_16305ad1"
+      },
+      "lastPushTimeStamp": "2021-04-06T04:03:13.739Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cenfotec-gram-staging-213903-deployment/amplify-cfn-templates/auth/cenfotecgram16305ad1-cloudformation-template.yml",
+        "logicalId": "authcenfotecgram16305ad1"
+      }
+    }
+  },
+  "storage": {
+    "s3255f7f46": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "BucketName": "cenfotec-gramb4bcd38fc521424aa60bbdecfe8528a4staging-staging",
+        "Region": "us-east-1"
+      },
+      "lastPushTimeStamp": "2021-04-06T04:03:13.741Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-cenfotec-gram-staging-213903-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+        "logicalId": "storages3255f7f46"
+      }
+    }
+  }
+}

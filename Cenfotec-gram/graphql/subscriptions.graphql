@@ -1,0 +1,232 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateComment {
+  onCreateComment {
+    id
+    body
+    author
+    date
+    title
+    pictureID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateComment {
+  onUpdateComment {
+    id
+    body
+    author
+    date
+    title
+    pictureID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteComment {
+  onDeleteComment {
+    id
+    body
+    author
+    date
+    title
+    pictureID
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateUser {
+  onCreateUser {
+    id
+    username
+    name
+    nick
+    age
+    avatarKey
+    Pictures_By_User {
+      items {
+        id
+        imageKey
+        likes
+        uploadDate
+        userID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateUser {
+  onUpdateUser {
+    id
+    username
+    name
+    nick
+    age
+    avatarKey
+    Pictures_By_User {
+      items {
+        id
+        imageKey
+        likes
+        uploadDate
+        userID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteUser {
+  onDeleteUser {
+    id
+    username
+    name
+    nick
+    age
+    avatarKey
+    Pictures_By_User {
+      items {
+        id
+        imageKey
+        likes
+        uploadDate
+        userID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreatePicture {
+  onCreatePicture {
+    id
+    imageKey
+    likes
+    uploadDate
+    userID
+    Comments_By_Picture {
+      items {
+        id
+        body
+        author
+        date
+        title
+        pictureID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdatePicture {
+  onUpdatePicture {
+    id
+    imageKey
+    likes
+    uploadDate
+    userID
+    Comments_By_Picture {
+      items {
+        id
+        body
+        author
+        date
+        title
+        pictureID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeletePicture {
+  onDeletePicture {
+    id
+    imageKey
+    likes
+    uploadDate
+    userID
+    Comments_By_Picture {
+      items {
+        id
+        body
+        author
+        date
+        title
+        pictureID
+        _version
+        _deleted
+        _lastChangedAt
+        createdAt
+        updatedAt
+      }
+      nextToken
+      startedAt
+    }
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}

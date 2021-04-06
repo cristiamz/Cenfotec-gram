@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BF884134DC04B28AD26B665 /* Note+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBCCFB8F3A248388414F848 /* Note+Schema.swift */; };
+		3F7C0AA8484E44A2BDAED05A /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = A33EEEAF724345558BFB0F4B /* awsconfiguration.json */; };
+		57E635834AE14949B11F509F /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D81314765FF415A91DD86F6 /* Comment.swift */; };
+		5924A049D80C4DEE9E19D109 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BD76901DE47119E0AB947 /* AmplifyModels.swift */; };
+		5A4E832920BF4024A703D078 /* Comment+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930AD7AD47DE42579BDE1D55 /* Comment+Schema.swift */; };
+		697A456F8AD85845E46CCEA7 /* Pods_Cenfotec_gram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FEE44F918605272A33E5D9 /* Pods_Cenfotec_gram.framework */; };
+		7C451C69322B4A7592C44FA5 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227F3468DE2246738B864411 /* Picture.swift */; };
+		860B9955EBE749338527F1C7 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF05EB7F4B9C438BB87C3DF8 /* Task.swift */; };
+		870AC2E43E824683B972C4BC /* Picture+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80381BC9CB4410BA6F15738 /* Picture+Schema.swift */; };
+		8BA06507261BFDD000D6A045 /* Cenfotec_gramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06506261BFDD000D6A045 /* Cenfotec_gramApp.swift */; };
+		8BA0650B261BFDD100D6A045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA0650A261BFDD100D6A045 /* Assets.xcassets */; };
+		8BA0650E261BFDD100D6A045 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA0650D261BFDD100D6A045 /* Preview Assets.xcassets */; };
+		8BA06B51261C17630058C0F7 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B46261C17630058C0F7 /* Picture.swift */; };
+		8BA06B52261C17630058C0F7 /* Comment+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B47261C17630058C0F7 /* Comment+Schema.swift */; };
+		8BA06B53261C17630058C0F7 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B48261C17630058C0F7 /* Comment.swift */; };
+		8BA06B54261C17630058C0F7 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B49261C17630058C0F7 /* AmplifyModels.swift */; };
+		8BA06B55261C17630058C0F7 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B4A261C17630058C0F7 /* User+Schema.swift */; };
+		8BA06B56261C17630058C0F7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B4B261C17630058C0F7 /* User.swift */; };
+		8BA06B57261C17630058C0F7 /* Note+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B4C261C17630058C0F7 /* Note+Schema.swift */; };
+		8BA06B58261C17630058C0F7 /* Picture+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B4D261C17630058C0F7 /* Picture+Schema.swift */; };
+		8BA06B59261C17630058C0F7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B4E261C17630058C0F7 /* Note.swift */; };
+		8BA06B5A261C17630058C0F7 /* Task+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B4F261C17630058C0F7 /* Task+Schema.swift */; };
+		8BA06B5B261C17630058C0F7 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B50261C17630058C0F7 /* Task.swift */; };
+		8BA06B60261C17EA0058C0F7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B5F261C17EA0058C0F7 /* LoginView.swift */; };
+		8BA06B64261C181E0058C0F7 /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B63261C181E0058C0F7 /* SessionViewModel.swift */; };
+		8BA06B67261C183F0058C0F7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B66261C183F0058C0F7 /* SignUpView.swift */; };
+		8BA06B6A261C18830058C0F7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B69261C18830058C0F7 /* MainView.swift */; };
+		8BA06B6F261C1BB00058C0F7 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B6E261C1BB00058C0F7 /* CameraView.swift */; };
+		8BA06B76261C1D880058C0F7 /* ImagePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B75261C1D880058C0F7 /* ImagePickerViewModel.swift */; };
+		8BA06B85261C236D0058C0F7 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B7A261C236D0058C0F7 /* Picture.swift */; };
+		8BA06B86261C236D0058C0F7 /* Comment+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B7B261C236D0058C0F7 /* Comment+Schema.swift */; };
+		8BA06B87261C236D0058C0F7 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B7C261C236D0058C0F7 /* Comment.swift */; };
+		8BA06B88261C236D0058C0F7 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B7D261C236D0058C0F7 /* AmplifyModels.swift */; };
+		8BA06B89261C236D0058C0F7 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B7E261C236D0058C0F7 /* User+Schema.swift */; };
+		8BA06B8A261C236D0058C0F7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B7F261C236D0058C0F7 /* User.swift */; };
+		8BA06B8B261C236D0058C0F7 /* Note+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B80261C236D0058C0F7 /* Note+Schema.swift */; };
+		8BA06B8C261C236D0058C0F7 /* Picture+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B81261C236D0058C0F7 /* Picture+Schema.swift */; };
+		8BA06B8D261C236D0058C0F7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B82261C236D0058C0F7 /* Note.swift */; };
+		8BA06B8E261C236D0058C0F7 /* Task+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B83261C236D0058C0F7 /* Task+Schema.swift */; };
+		8BA06B8F261C236D0058C0F7 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B84261C236D0058C0F7 /* Task.swift */; };
+		8BA06B92261C310B0058C0F7 /* Picture+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA06B91261C310B0058C0F7 /* Picture+Extensions.swift */; };
+		B5EC8119DF70436A938B4669 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FB3027D54E0A44B28C0ED424 /* amplifyconfiguration.json */; };
+		BBFD078442194ACEB468005D /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080108D314CD4BCCAFC15647 /* Note.swift */; };
+		DA9360F5516D403D85C5FBCE /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C08B74686A7408297B29610 /* User+Schema.swift */; };
+		DCA95D0C71A8432DB796BDDC /* Task+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4374D1B0B042739416619D /* Task+Schema.swift */; };
+		EABD34EE9A5E4487B861DB0C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CDC19225034FC2B86F5AB3 /* User.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		080108D314CD4BCCAFC15647 /* Note.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = Note.swift; path = amplify/generated/models/Note.swift; sourceTree = "<group>"; };
+		1BBCCFB8F3A248388414F848 /* Note+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "Note+Schema.swift"; path = "amplify/generated/models/Note+Schema.swift"; sourceTree = "<group>"; };
+		211E7EB28EAA4C04B2EE2670 /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/amplifyDatasource/schema.graphql; sourceTree = "<group>"; };
+		227F3468DE2246738B864411 /* Picture.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = Picture.swift; path = amplify/generated/models/Picture.swift; sourceTree = "<group>"; };
+		2D81314765FF415A91DD86F6 /* Comment.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = amplify/generated/models/Comment.swift; sourceTree = "<group>"; };
+		319E250879B169348310F3D5 /* Pods-Cenfotec-gram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cenfotec-gram.release.xcconfig"; path = "Target Support Files/Pods-Cenfotec-gram/Pods-Cenfotec-gram.release.xcconfig"; sourceTree = "<group>"; };
+		348BD76901DE47119E0AB947 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		4C08B74686A7408297B29610 /* User+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "User+Schema.swift"; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
+		81CDC19225034FC2B86F5AB3 /* User.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = User.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
+		8BA06503261BFDD000D6A045 /* Cenfotec-gram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cenfotec-gram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA06506261BFDD000D6A045 /* Cenfotec_gramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cenfotec_gramApp.swift; sourceTree = "<group>"; };
+		8BA0650A261BFDD100D6A045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BA0650D261BFDD100D6A045 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8BA0650F261BFDD100D6A045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BA06B46261C17630058C0F7 /* Picture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		8BA06B47261C17630058C0F7 /* Comment+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Comment+Schema.swift"; sourceTree = "<group>"; };
+		8BA06B48261C17630058C0F7 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		8BA06B49261C17630058C0F7 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
+		8BA06B4A261C17630058C0F7 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
+		8BA06B4B261C17630058C0F7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8BA06B4C261C17630058C0F7 /* Note+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+Schema.swift"; sourceTree = "<group>"; };
+		8BA06B4D261C17630058C0F7 /* Picture+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Picture+Schema.swift"; sourceTree = "<group>"; };
+		8BA06B4E261C17630058C0F7 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		8BA06B4F261C17630058C0F7 /* Task+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Task+Schema.swift"; sourceTree = "<group>"; };
+		8BA06B50261C17630058C0F7 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		8BA06B5F261C17EA0058C0F7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8BA06B63261C181E0058C0F7 /* SessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewModel.swift; sourceTree = "<group>"; };
+		8BA06B66261C183F0058C0F7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		8BA06B69261C18830058C0F7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8BA06B6E261C1BB00058C0F7 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		8BA06B75261C1D880058C0F7 /* ImagePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewModel.swift; sourceTree = "<group>"; };
+		8BA06B7A261C236D0058C0F7 /* Picture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		8BA06B7B261C236D0058C0F7 /* Comment+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Comment+Schema.swift"; sourceTree = "<group>"; };
+		8BA06B7C261C236D0058C0F7 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		8BA06B7D261C236D0058C0F7 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
+		8BA06B7E261C236D0058C0F7 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
+		8BA06B7F261C236D0058C0F7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8BA06B80261C236D0058C0F7 /* Note+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+Schema.swift"; sourceTree = "<group>"; };
+		8BA06B81261C236D0058C0F7 /* Picture+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Picture+Schema.swift"; sourceTree = "<group>"; };
+		8BA06B82261C236D0058C0F7 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		8BA06B83261C236D0058C0F7 /* Task+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Task+Schema.swift"; sourceTree = "<group>"; };
+		8BA06B84261C236D0058C0F7 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		8BA06B91261C310B0058C0F7 /* Picture+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Picture+Extensions.swift"; sourceTree = "<group>"; };
+		930AD7AD47DE42579BDE1D55 /* Comment+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "Comment+Schema.swift"; path = "amplify/generated/models/Comment+Schema.swift"; sourceTree = "<group>"; };
+		A33EEEAF724345558BFB0F4B /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
+		A9D90AF02880488C8B4A694B /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
+		B2FEE44F918605272A33E5D9 /* Pods_Cenfotec_gram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cenfotec_gram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD137375A16DE9761F6070B /* Pods-Cenfotec-gram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cenfotec-gram.debug.xcconfig"; path = "Target Support Files/Pods-Cenfotec-gram/Pods-Cenfotec-gram.debug.xcconfig"; sourceTree = "<group>"; };
+		DF05EB7F4B9C438BB87C3DF8 /* Task.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = Task.swift; path = amplify/generated/models/Task.swift; sourceTree = "<group>"; };
+		E80381BC9CB4410BA6F15738 /* Picture+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "Picture+Schema.swift"; path = "amplify/generated/models/Picture+Schema.swift"; sourceTree = "<group>"; };
+		EB4374D1B0B042739416619D /* Task+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "Task+Schema.swift"; path = "amplify/generated/models/Task+Schema.swift"; sourceTree = "<group>"; };
+		FB3027D54E0A44B28C0ED424 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BA06500261BFDD000D6A045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697A456F8AD85845E46CCEA7 /* Pods_Cenfotec_gram.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EC956739B2C4DEE83AB826E /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				A9D90AF02880488C8B4A694B /* amplifytools.xcconfig */,
+				FB3027D54E0A44B28C0ED424 /* amplifyconfiguration.json */,
+				A33EEEAF724345558BFB0F4B /* awsconfiguration.json */,
+				211E7EB28EAA4C04B2EE2670 /* schema.graphql */,
+			);
+			name = AmplifyConfig;
+			path = .;
+			sourceTree = "<group>";
+		};
+		8BA064FA261BFDD000D6A045 = {
+			isa = PBXGroup;
+			children = (
+				B051AE901D14482687DE5473 /* AmplifyModels */,
+				7EC956739B2C4DEE83AB826E /* AmplifyConfig */,
+				8BA06505261BFDD000D6A045 /* Cenfotec-gram */,
+				8BA06504261BFDD000D6A045 /* Products */,
+				D8C6B5825C590066EB66DFCB /* Pods */,
+				D485DB7412437E4D4BBE567F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8BA06504261BFDD000D6A045 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BA06503261BFDD000D6A045 /* Cenfotec-gram.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BA06505261BFDD000D6A045 /* Cenfotec-gram */ = {
+			isa = PBXGroup;
+			children = (
+				8BA06B79261C236D0058C0F7 /* models */,
+				8BA06B5E261C17C50058C0F7 /* Views */,
+				8BA06B5D261C17BA0058C0F7 /* ViewModels */,
+				8BA06B45261C17630058C0F7 /* models */,
+				8BA06506261BFDD000D6A045 /* Cenfotec_gramApp.swift */,
+				8BA0650A261BFDD100D6A045 /* Assets.xcassets */,
+				8BA0650F261BFDD100D6A045 /* Info.plist */,
+				8BA0650C261BFDD100D6A045 /* Preview Content */,
+			);
+			path = "Cenfotec-gram";
+			sourceTree = "<group>";
+		};
+		8BA0650C261BFDD100D6A045 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8BA0650D261BFDD100D6A045 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8BA06B45261C17630058C0F7 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				8BA06B46261C17630058C0F7 /* Picture.swift */,
+				8BA06B47261C17630058C0F7 /* Comment+Schema.swift */,
+				8BA06B48261C17630058C0F7 /* Comment.swift */,
+				8BA06B49261C17630058C0F7 /* AmplifyModels.swift */,
+				8BA06B4A261C17630058C0F7 /* User+Schema.swift */,
+				8BA06B4B261C17630058C0F7 /* User.swift */,
+				8BA06B4C261C17630058C0F7 /* Note+Schema.swift */,
+				8BA06B4D261C17630058C0F7 /* Picture+Schema.swift */,
+				8BA06B4E261C17630058C0F7 /* Note.swift */,
+				8BA06B4F261C17630058C0F7 /* Task+Schema.swift */,
+				8BA06B50261C17630058C0F7 /* Task.swift */,
+			);
+			name = models;
+			path = amplify/generated/models;
+			sourceTree = SOURCE_ROOT;
+		};
+		8BA06B5D261C17BA0058C0F7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8BA06B63261C181E0058C0F7 /* SessionViewModel.swift */,
+				8BA06B75261C1D880058C0F7 /* ImagePickerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8BA06B5E261C17C50058C0F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BA06B5F261C17EA0058C0F7 /* LoginView.swift */,
+				8BA06B66261C183F0058C0F7 /* SignUpView.swift */,
+				8BA06B69261C18830058C0F7 /* MainView.swift */,
+				8BA06B6E261C1BB00058C0F7 /* CameraView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8BA06B79261C236D0058C0F7 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				8BA06B7A261C236D0058C0F7 /* Picture.swift */,
+				8BA06B7B261C236D0058C0F7 /* Comment+Schema.swift */,
+				8BA06B7C261C236D0058C0F7 /* Comment.swift */,
+				8BA06B7D261C236D0058C0F7 /* AmplifyModels.swift */,
+				8BA06B7E261C236D0058C0F7 /* User+Schema.swift */,
+				8BA06B7F261C236D0058C0F7 /* User.swift */,
+				8BA06B80261C236D0058C0F7 /* Note+Schema.swift */,
+				8BA06B81261C236D0058C0F7 /* Picture+Schema.swift */,
+				8BA06B82261C236D0058C0F7 /* Note.swift */,
+				8BA06B83261C236D0058C0F7 /* Task+Schema.swift */,
+				8BA06B84261C236D0058C0F7 /* Task.swift */,
+				8BA06B91261C310B0058C0F7 /* Picture+Extensions.swift */,
+			);
+			name = models;
+			path = amplify/generated/models;
+			sourceTree = SOURCE_ROOT;
+		};
+		B051AE901D14482687DE5473 /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				348BD76901DE47119E0AB947 /* AmplifyModels.swift */,
+				2D81314765FF415A91DD86F6 /* Comment.swift */,
+				930AD7AD47DE42579BDE1D55 /* Comment+Schema.swift */,
+				080108D314CD4BCCAFC15647 /* Note.swift */,
+				1BBCCFB8F3A248388414F848 /* Note+Schema.swift */,
+				227F3468DE2246738B864411 /* Picture.swift */,
+				E80381BC9CB4410BA6F15738 /* Picture+Schema.swift */,
+				DF05EB7F4B9C438BB87C3DF8 /* Task.swift */,
+				EB4374D1B0B042739416619D /* Task+Schema.swift */,
+				81CDC19225034FC2B86F5AB3 /* User.swift */,
+				4C08B74686A7408297B29610 /* User+Schema.swift */,
+			);
+			name = AmplifyModels;
+			path = .;
+			sourceTree = "<group>";
+		};
+		D485DB7412437E4D4BBE567F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2FEE44F918605272A33E5D9 /* Pods_Cenfotec_gram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8C6B5825C590066EB66DFCB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAD137375A16DE9761F6070B /* Pods-Cenfotec-gram.debug.xcconfig */,
+				319E250879B169348310F3D5 /* Pods-Cenfotec-gram.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BA06502261BFDD000D6A045 /* Cenfotec-gram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BA06512261BFDD100D6A045 /* Build configuration list for PBXNativeTarget "Cenfotec-gram" */;
+			buildPhases = (
+				9240B11219BA63015EFB48EF /* [CP] Check Pods Manifest.lock */,
+				8BA064FF261BFDD000D6A045 /* Sources */,
+				8BA06500261BFDD000D6A045 /* Frameworks */,
+				8BA06501261BFDD000D6A045 /* Resources */,
+				7633088A172E60AA169930AC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cenfotec-gram";
+			productName = "Cenfotec-gram";
+			productReference = 8BA06503261BFDD000D6A045 /* Cenfotec-gram.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BA064FB261BFDD000D6A045 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					8BA06502261BFDD000D6A045 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 8BA064FE261BFDD000D6A045 /* Build configuration list for PBXProject "Cenfotec-gram" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BA064FA261BFDD000D6A045;
+			productRefGroup = 8BA06504261BFDD000D6A045 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BA06502261BFDD000D6A045 /* Cenfotec-gram */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BA06501261BFDD000D6A045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA0650E261BFDD100D6A045 /* Preview Assets.xcassets in Resources */,
+				8BA0650B261BFDD100D6A045 /* Assets.xcassets in Resources */,
+				B5EC8119DF70436A938B4669 /* amplifyconfiguration.json in Resources */,
+				3F7C0AA8484E44A2BDAED05A /* awsconfiguration.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7633088A172E60AA169930AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cenfotec-gram/Pods-Cenfotec-gram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cenfotec-gram/Pods-Cenfotec-gram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cenfotec-gram/Pods-Cenfotec-gram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9240B11219BA63015EFB48EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cenfotec-gram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BA064FF261BFDD000D6A045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA06B53261C17630058C0F7 /* Comment.swift in Sources */,
+				8BA06B8E261C236D0058C0F7 /* Task+Schema.swift in Sources */,
+				8BA06B92261C310B0058C0F7 /* Picture+Extensions.swift in Sources */,
+				8BA06B76261C1D880058C0F7 /* ImagePickerViewModel.swift in Sources */,
+				8BA06B64261C181E0058C0F7 /* SessionViewModel.swift in Sources */,
+				8BA06B51261C17630058C0F7 /* Picture.swift in Sources */,
+				8BA06B58261C17630058C0F7 /* Picture+Schema.swift in Sources */,
+				8BA06B55261C17630058C0F7 /* User+Schema.swift in Sources */,
+				8BA06B85261C236D0058C0F7 /* Picture.swift in Sources */,
+				8BA06B88261C236D0058C0F7 /* AmplifyModels.swift in Sources */,
+				8BA06B56261C17630058C0F7 /* User.swift in Sources */,
+				8BA06B8D261C236D0058C0F7 /* Note.swift in Sources */,
+				8BA06B52261C17630058C0F7 /* Comment+Schema.swift in Sources */,
+				8BA06B5A261C17630058C0F7 /* Task+Schema.swift in Sources */,
+				8BA06B60261C17EA0058C0F7 /* LoginView.swift in Sources */,
+				8BA06B5B261C17630058C0F7 /* Task.swift in Sources */,
+				8BA06B8A261C236D0058C0F7 /* User.swift in Sources */,
+				8BA06B6A261C18830058C0F7 /* MainView.swift in Sources */,
+				8BA06B86261C236D0058C0F7 /* Comment+Schema.swift in Sources */,
+				8BA06B59261C17630058C0F7 /* Note.swift in Sources */,
+				8BA06B67261C183F0058C0F7 /* SignUpView.swift in Sources */,
+				8BA06B54261C17630058C0F7 /* AmplifyModels.swift in Sources */,
+				8BA06B57261C17630058C0F7 /* Note+Schema.swift in Sources */,
+				8BA06B6F261C1BB00058C0F7 /* CameraView.swift in Sources */,
+				8BA06507261BFDD000D6A045 /* Cenfotec_gramApp.swift in Sources */,
+				5924A049D80C4DEE9E19D109 /* AmplifyModels.swift in Sources */,
+				8BA06B8C261C236D0058C0F7 /* Picture+Schema.swift in Sources */,
+				57E635834AE14949B11F509F /* Comment.swift in Sources */,
+				8BA06B89261C236D0058C0F7 /* User+Schema.swift in Sources */,
+				5A4E832920BF4024A703D078 /* Comment+Schema.swift in Sources */,
+				BBFD078442194ACEB468005D /* Note.swift in Sources */,
+				0BF884134DC04B28AD26B665 /* Note+Schema.swift in Sources */,
+				7C451C69322B4A7592C44FA5 /* Picture.swift in Sources */,
+				8BA06B8F261C236D0058C0F7 /* Task.swift in Sources */,
+				870AC2E43E824683B972C4BC /* Picture+Schema.swift in Sources */,
+				8BA06B87261C236D0058C0F7 /* Comment.swift in Sources */,
+				860B9955EBE749338527F1C7 /* Task.swift in Sources */,
+				DCA95D0C71A8432DB796BDDC /* Task+Schema.swift in Sources */,
+				EABD34EE9A5E4487B861DB0C /* User.swift in Sources */,
+				8BA06B8B261C236D0058C0F7 /* Note+Schema.swift in Sources */,
+				DA9360F5516D403D85C5FBCE /* User+Schema.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8BA06510261BFDD100D6A045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BA06511261BFDD100D6A045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BA06513261BFDD100D6A045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD137375A16DE9761F6070B /* Pods-Cenfotec-gram.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Cenfotec-gram/Preview Content\"";
+				DEVELOPMENT_TEAM = BCZJ3F583S;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Cenfotec-gram/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.snowcapcr.Cenfotec-gram";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BA06514261BFDD100D6A045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 319E250879B169348310F3D5 /* Pods-Cenfotec-gram.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Cenfotec-gram/Preview Content\"";
+				DEVELOPMENT_TEAM = BCZJ3F583S;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Cenfotec-gram/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.snowcapcr.Cenfotec-gram";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BA064FE261BFDD000D6A045 /* Build configuration list for PBXProject "Cenfotec-gram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BA06510261BFDD100D6A045 /* Debug */,
+				8BA06511261BFDD100D6A045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BA06512261BFDD100D6A045 /* Build configuration list for PBXNativeTarget "Cenfotec-gram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BA06513261BFDD100D6A045 /* Debug */,
+				8BA06514261BFDD100D6A045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BA064FB261BFDD000D6A045 /* Project object */;
+}

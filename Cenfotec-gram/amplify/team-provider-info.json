@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cenfotec-gram-staging-213903-authRole",
+      "UnauthRoleArn": "arn:aws:iam::230395879055:role/amplify-cenfotec-gram-staging-213903-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::230395879055:role/amplify-cenfotec-gram-staging-213903-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cenfotec-gram-staging-213903-deployment",
+      "UnauthRoleName": "amplify-cenfotec-gram-staging-213903-unauthRole",
+      "StackName": "amplify-cenfotec-gram-staging-213903",
+      "StackId": "arn:aws:cloudformation:us-east-1:230395879055:stack/amplify-cenfotec-gram-staging-213903/a40acfb0-9689-11eb-bcc6-0adc8babde53",
+      "AmplifyAppId": "d2qywzdh617rn0"
+    },
+    "categories": {
+      "auth": {
+        "cenfotecgram16305ad1": {}
+      }
+    }
+  }
+}

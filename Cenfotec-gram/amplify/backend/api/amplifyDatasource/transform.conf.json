@@ -1,0 +1,50 @@
+{
+    "Version": 5,
+    "ResolverConfig": {
+        "project": {
+            "ConflictHandler": "AUTOMERGE",
+            "ConflictDetection": "VERSION"
+        }
+    },
+    "ElasticsearchWarning": true,
+    "StackMapping": {
+        "CommentTable": "Comment",
+        "CommentIAMRole": "Comment",
+        "CommentDataSource": "Comment",
+        "SyncCommentResolver": "Comment",
+        "GetCommentResolver": "Comment",
+        "ListCommentResolver": "Comment",
+        "CreateCommentResolver": "Comment",
+        "UpdateCommentResolver": "Comment",
+        "DeleteCommentResolver": "Comment",
+        "GetAttCommentTableStreamArn": "Comment",
+        "GetAttCommentDataSourceName": "Comment",
+        "GetAttCommentTableName": "Comment",
+        "UserPicturesByUserc91dResolver": "ConnectionStack",
+        "PictureCommentsByPicture60d1Resolver": "ConnectionStack",
+        "PictureTable": "Picture",
+        "PictureIAMRole": "Picture",
+        "PictureDataSource": "Picture",
+        "SyncPictureResolver": "Picture",
+        "GetPictureResolver": "Picture",
+        "ListPictureResolver": "Picture",
+        "CreatePictureResolver": "Picture",
+        "UpdatePictureResolver": "Picture",
+        "DeletePictureResolver": "Picture",
+        "GetAttPictureTableStreamArn": "Picture",
+        "GetAttPictureDataSourceName": "Picture",
+        "GetAttPictureTableName": "Picture",
+        "UserTable": "User",
+        "UserIAMRole": "User",
+        "UserDataSource": "User",
+        "SyncUserResolver": "User",
+        "GetUserResolver": "User",
+        "ListUserResolver": "User",
+        "CreateUserResolver": "User",
+        "UpdateUserResolver": "User",
+        "DeleteUserResolver": "User",
+        "GetAttUserTableStreamArn": "User",
+        "GetAttUserDataSourceName": "User",
+        "GetAttUserTableName": "User"
+    }
+}
