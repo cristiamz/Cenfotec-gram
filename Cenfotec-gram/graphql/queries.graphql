@@ -1,71 +1,4 @@
 # this is an auto generated file. This will be overwritten
-query SyncComments(
-  $filter: ModelCommentFilterInput
-  $limit: Int
-  $nextToken: String
-  $lastSync: AWSTimestamp
-) {
-  syncComments(
-    filter: $filter
-    limit: $limit
-    nextToken: $nextToken
-    lastSync: $lastSync
-  ) {
-    items {
-      id
-      body
-      author
-      date
-      title
-      pictureID
-      _version
-      _deleted
-      _lastChangedAt
-      createdAt
-      updatedAt
-    }
-    nextToken
-    startedAt
-  }
-}
-query GetComment($id: ID!) {
-  getComment(id: $id) {
-    id
-    body
-    author
-    date
-    title
-    pictureID
-    _version
-    _deleted
-    _lastChangedAt
-    createdAt
-    updatedAt
-  }
-}
-query ListComments(
-  $filter: ModelCommentFilterInput
-  $limit: Int
-  $nextToken: String
-) {
-  listComments(filter: $filter, limit: $limit, nextToken: $nextToken) {
-    items {
-      id
-      body
-      author
-      date
-      title
-      pictureID
-      _version
-      _deleted
-      _lastChangedAt
-      createdAt
-      updatedAt
-    }
-    nextToken
-    startedAt
-  }
-}
 query SyncUsers(
   $filter: ModelUserFilterInput
   $limit: Int
@@ -114,6 +47,8 @@ query GetUser($id: ID!) {
         likes
         uploadDate
         userID
+        body
+        author
         _version
         _deleted
         _lastChangedAt
@@ -175,10 +110,8 @@ query SyncPictures(
       likes
       uploadDate
       userID
-      Comments_By_Picture {
-        nextToken
-        startedAt
-      }
+      body
+      author
       _version
       _deleted
       _lastChangedAt
@@ -196,23 +129,8 @@ query GetPicture($id: ID!) {
     likes
     uploadDate
     userID
-    Comments_By_Picture {
-      items {
-        id
-        body
-        author
-        date
-        title
-        pictureID
-        _version
-        _deleted
-        _lastChangedAt
-        createdAt
-        updatedAt
-      }
-      nextToken
-      startedAt
-    }
+    body
+    author
     _version
     _deleted
     _lastChangedAt
@@ -232,10 +150,8 @@ query ListPictures(
       likes
       uploadDate
       userID
-      Comments_By_Picture {
-        nextToken
-        startedAt
-      }
+      body
+      author
       _version
       _deleted
       _lastChangedAt

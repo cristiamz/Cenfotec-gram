@@ -11,8 +11,6 @@ import Amplify
 
 struct MainView: View {
     @StateObject var sessionVM = SessionViewModel()
-    
-    //@State var imageCache = [Picture: UIImage?]()
     @State var imageCache = [String: UIImage?]()
     @State var feed = [Picture]()
     @State var showUpload = false
@@ -20,42 +18,59 @@ struct MainView: View {
     var body: some View {
         NavigationView{
             if sessionVM.isLogged() {
-                //Text("Logged to the feed")
                 
                 ZStack{
+                    
                     List(imageCache.sorted(by: { $0.key > $1.key}), id: \.key) {key, image in
-//                    List {
-//                        ForEach (imageCache) { image in
-                            if let image = image{
-                            Image(uiImage: image)
-                                .resizable()
-                                .scaledToFit()
+                        
+                        if let image = image{
+                            VStack{
+                                
+                                Image(uiImage: image)
+                                    .resizable()
+                                    .scaledToFit()
+                                
+                                if let index = feed.firstIndex(where: { $0.imageKey == key })
+                                {
+                                    let info = feed[index]
+                                    
+                                    Text("\(info.likes ?? 0) likes")
+                                    Spacer()
+                                    HStack{
+                                        
+                                        Text("\(info.author ?? "anonymous")")
+                                        Spacer()
+                                        Text("\(info.body)")
+                                        
+                                    }
+                                }
+                                
+                            }
                         }
-                        //Text("Likes \(image.likes)")
                     }
                     .onAppear()
                     {
                         getPictures()
                         observeFeed()
                     }
-
-                
-                VStack{
+                    
+                    
+                    VStack{
+                        Spacer()
+                        Button(
+                            action: { showUpload.toggle() },
+                            label: {
+                                Image(systemName:"camera")
+                                    .padding()
+                                    .foregroundColor(.white)
+                                    .background(Color.blue)
+                                    .clipShape(Circle())
+                            }
+                        )
+                    }
                     Spacer()
-                    Button(
-                        action: { showUpload.toggle() },
-                           label: {
-                            Image(systemName:"camera")
-                                .padding()
-                                .foregroundColor(.white)
-                                .background(Color.blue)
-                                .clipShape(Circle())
-                           }
-                    )
-                }
-                Spacer()
-                    .frame(height: 30)
-                
+                        .frame(height: 30)
+                    
                 }.sheet(isPresented: $showUpload){
                     CameraView()
                 }
@@ -67,7 +82,7 @@ struct MainView: View {
                 }
             }else{
                 VStack{
-                   LoginView()
+                    LoginView()
                 }.padding()
             }
         }
@@ -120,6 +135,7 @@ struct MainView: View {
             do {
                 let picture = try event.decodeModel(as: Picture.self)
                 downloadImages(for: [picture])
+                feed.append(picture)
             } catch {
                 print (error)
             }
@@ -134,7 +150,7 @@ struct MainView: View {
                 
                 if session.isSignedIn {
                     DispatchQueue.main.async {
-                    self.sessionVM.logged = true
+                        self.sessionVM.logged = true
                     }
                 }
                 
@@ -149,7 +165,7 @@ struct MainView: View {
             case .success:
                 print("Successfully signed out")
                 withAnimation(.easeOut){self.sessionVM.logged = false}
-                //self.sessionVM.logged = false
+            //self.sessionVM.logged = false
             case .failure(let error):
                 print("Sign out failed with error \(error)")
                 self.sessionVM.logged = true

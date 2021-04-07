@@ -1,49 +1,4 @@
 # this is an auto generated file. This will be overwritten
-subscription OnCreateComment {
-  onCreateComment {
-    id
-    body
-    author
-    date
-    title
-    pictureID
-    _version
-    _deleted
-    _lastChangedAt
-    createdAt
-    updatedAt
-  }
-}
-subscription OnUpdateComment {
-  onUpdateComment {
-    id
-    body
-    author
-    date
-    title
-    pictureID
-    _version
-    _deleted
-    _lastChangedAt
-    createdAt
-    updatedAt
-  }
-}
-subscription OnDeleteComment {
-  onDeleteComment {
-    id
-    body
-    author
-    date
-    title
-    pictureID
-    _version
-    _deleted
-    _lastChangedAt
-    createdAt
-    updatedAt
-  }
-}
 subscription OnCreateUser {
   onCreateUser {
     id
@@ -59,6 +14,8 @@ subscription OnCreateUser {
         likes
         uploadDate
         userID
+        body
+        author
         _version
         _deleted
         _lastChangedAt
@@ -90,6 +47,8 @@ subscription OnUpdateUser {
         likes
         uploadDate
         userID
+        body
+        author
         _version
         _deleted
         _lastChangedAt
@@ -121,6 +80,8 @@ subscription OnDeleteUser {
         likes
         uploadDate
         userID
+        body
+        author
         _version
         _deleted
         _lastChangedAt
@@ -144,23 +105,8 @@ subscription OnCreatePicture {
     likes
     uploadDate
     userID
-    Comments_By_Picture {
-      items {
-        id
-        body
-        author
-        date
-        title
-        pictureID
-        _version
-        _deleted
-        _lastChangedAt
-        createdAt
-        updatedAt
-      }
-      nextToken
-      startedAt
-    }
+    body
+    author
     _version
     _deleted
     _lastChangedAt
@@ -175,23 +121,8 @@ subscription OnUpdatePicture {
     likes
     uploadDate
     userID
-    Comments_By_Picture {
-      items {
-        id
-        body
-        author
-        date
-        title
-        pictureID
-        _version
-        _deleted
-        _lastChangedAt
-        createdAt
-        updatedAt
-      }
-      nextToken
-      startedAt
-    }
+    body
+    author
     _version
     _deleted
     _lastChangedAt
@@ -206,23 +137,8 @@ subscription OnDeletePicture {
     likes
     uploadDate
     userID
-    Comments_By_Picture {
-      items {
-        id
-        body
-        author
-        date
-        title
-        pictureID
-        _version
-        _deleted
-        _lastChangedAt
-        createdAt
-        updatedAt
-      }
-      nextToken
-      startedAt
-    }
+    body
+    author
     _version
     _deleted
     _lastChangedAt

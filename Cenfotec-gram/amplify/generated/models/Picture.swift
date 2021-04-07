@@ -8,19 +8,22 @@ public struct Picture: Model {
   public var likes: Int?
   public var uploadDate: String?
   public var userID: String?
-  public var Comments_By_Picture: List<Comment>?
+  public var body: String
+  public var author: String?
   
   public init(id: String = UUID().uuidString,
       imageKey: String,
       likes: Int? = nil,
       uploadDate: String? = nil,
       userID: String? = nil,
-      Comments_By_Picture: List<Comment>? = []) {
+      body: String,
+      author: String? = nil) {
       self.id = id
       self.imageKey = imageKey
       self.likes = likes
       self.uploadDate = uploadDate
       self.userID = userID
-      self.Comments_By_Picture = Comments_By_Picture
+      self.body = body
+      self.author = author
   }
 }

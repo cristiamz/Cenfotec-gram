@@ -10,7 +10,8 @@ extension Picture {
     case likes
     case uploadDate
     case userID
-    case Comments_By_Picture
+    case body
+    case author
   }
   
   public static let keys = CodingKeys.self
@@ -27,7 +28,8 @@ extension Picture {
       .field(picture.likes, is: .optional, ofType: .int),
       .field(picture.uploadDate, is: .optional, ofType: .string),
       .field(picture.userID, is: .optional, ofType: .string),
-      .hasMany(picture.Comments_By_Picture, is: .optional, ofType: Comment.self, associatedWith: Comment.keys.pictureID)
+      .field(picture.body, is: .required, ofType: .string),
+      .field(picture.author, is: .optional, ofType: .string)
     )
     }
 }

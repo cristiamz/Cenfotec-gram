@@ -15,6 +15,9 @@ struct CameraView: View {
     @State var shouldShowImagePicker = false
     @State var image: UIImage?
     
+    @ObservedObject var quoteVM = QuoteViewModel()
+    @ObservedObject var rndUserVM = RandomUserViewModel()
+    
     var body: some View {
         VStack {
             if let image = self.image {
@@ -36,6 +39,11 @@ struct CameraView: View {
                     .clipShape(Circle())
             })
             Spacer()
+        }
+        .onAppear(){
+            self.rndUserVM.fetchRndUser()
+            self.quoteVM.fetchQuote()
+            
         }
         .sheet(isPresented: $shouldShowImagePicker, content: {
             ImagePicker(image: $image)
@@ -65,27 +73,16 @@ struct CameraView: View {
                 print ("Uploaded")
                 //Save to the DB
                 
-                //            case id
-                //            case body
-                //            case author
-                //            case date
-                //            case title
-                //            case pictureID
-//                let Comments_By_Picture = Comment (body: "New Comment", author: "Cristian", date: "date", title: "title")
-                
-                //        case likes
-                //        case uploadDate
-                //        case userID
-                //        case Comments_By_Picture
-                
                 let likes = Int.random(in: 1..<99)
                 let today = Date()
                 let formatter = DateFormatter()
                 formatter.dateStyle = .short
                 let uploadDate = formatter.string(from: today)
                 
+                print ("author \(self.rndUserVM.randomUser.first?.name.first ?? "") \(self.rndUserVM.randomUser.first?.name.last ?? "")")
                 
-                let picture = Picture(imageKey: key, likes: likes, uploadDate:uploadDate, userID: "Cristian")
+                let picture = Picture(imageKey: key, likes: likes, uploadDate:uploadDate, userID: "Cristian",body: self.quoteVM.quotes.first?.quote ?? "", author: "\(self.rndUserVM.randomUser.first?.name.first ?? "") \(self.rndUserVM.randomUser.first?.name.last ?? "")" )
+                
                 save(picture)
                 
             case .failure (let error):
