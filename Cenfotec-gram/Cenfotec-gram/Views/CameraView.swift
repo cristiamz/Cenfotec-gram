@@ -71,6 +71,7 @@ struct CameraView: View {
             switch result {
             case .success:
                 print ("Uploaded")
+                
                 //Save to the DB
                 
                 let likes = Int.random(in: 1..<99)
