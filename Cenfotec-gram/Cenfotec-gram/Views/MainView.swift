@@ -43,25 +43,30 @@ struct DetailView: View {
                 case .failure(let error):
                     print (error)
                 }
-                
             }
-            
         }
     }
+}
+
+enum ActiveSheet: Identifiable {
+    case profile, camera
     
+    var id: Int {
+        hashValue
+    }
 }
 
 struct MainView: View {
     @StateObject var sessionVM = SessionViewModel()
-    //@ObservedObject var selectedPicture = Picture()
+    //@State private var showingProfile = false
+    //@State var showUpload = false
+    @State var showSheet : ActiveSheet?
     @State var imageCache = [String: UIImage?]()
     @State var feed = [Picture]()
-    @State var showUpload = false
-    
+
     var body: some View {
         NavigationView {
             if sessionVM.isLogged() {
-                
                 ZStack{
                     List {
                         ForEach(feed) {  picture in
@@ -87,12 +92,12 @@ struct MainView: View {
                         getPictures()
                         observeFeed()
                     }
-                    
-                    
+                    .navigationBarTitle("My pictures")
+                   
                     VStack{
                         Spacer()
                         Button(
-                            action: { showUpload.toggle() },
+                            action: { showSheet = .camera },
                             label: {
                                 Image(systemName:"camera")
                                     .padding()
@@ -105,13 +110,25 @@ struct MainView: View {
                     Spacer()
                         .frame(height: 30)
                     
-                }.sheet(isPresented: $showUpload){
-                    CameraView()
                 }
-                
+                .sheet(item: $showSheet) { item in
+                            switch item {
+                            case .camera:
+                                CameraView()
+                            case .profile:
+                                ProfileView()
+                            }
+                        }
                 .toolbar {
-                    Button("Log Out") {
-                        self.logOut()
+                    ToolbarItemGroup(placement: .bottomBar) {
+                        Button(action: { showSheet = .profile }) {
+                            Image(systemName: "person.crop.circle")
+                                .accessibilityLabel("User Profile")
+                        }
+                        Spacer()
+                        Button("Log Out") {
+                            self.logOut()
+                        }
                     }
                 }
             }else{
@@ -218,13 +235,18 @@ struct MainView: View {
             }
         }
     }
+    
     func logOut(){
         Amplify.Auth.signOut() { result in
             switch result {
             case .success:
                 print("Successfully signed out")
                 self.feed = []
-                withAnimation(.easeOut){self.sessionVM.logged = false}
+                withAnimation(.easeOut){
+                    DispatchQueue.main.async {
+                        self.sessionVM.logged = false
+                    }
+                }
             case .failure(let error):
                 print("Sign out failed with error \(error)")
                 self.sessionVM.logged = true

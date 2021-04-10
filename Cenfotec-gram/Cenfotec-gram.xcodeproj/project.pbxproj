@@ -52,6 +52,7 @@
 		8BCF748A261D530500F3860D /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF7489261D530500F3860D /* QuoteModel.swift */; };
 		8BCF748D261D568300F3860D /* RandomUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF748C261D568300F3860D /* RandomUserViewModel.swift */; };
 		8BCF7490261D56B300F3860D /* RandomUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF748F261D56B300F3860D /* RandomUserModel.swift */; };
+		8BEE49B7262135670007168C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE49B6262135670007168C /* ProfileView.swift */; };
 		B5EC8119DF70436A938B4669 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FB3027D54E0A44B28C0ED424 /* amplifyconfiguration.json */; };
 		BBFD078442194ACEB468005D /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080108D314CD4BCCAFC15647 /* Note.swift */; };
 		C93917A493514D4AAC164EEE /* Picture+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8B30C0AD42418AE8EF7A /* Picture+Extensions.swift */; };
@@ -108,6 +109,7 @@
 		8BCF7489261D530500F3860D /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
 		8BCF748C261D568300F3860D /* RandomUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserViewModel.swift; sourceTree = "<group>"; };
 		8BCF748F261D56B300F3860D /* RandomUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserModel.swift; sourceTree = "<group>"; };
+		8BEE49B6262135670007168C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		930AD7AD47DE42579BDE1D55 /* Comment+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "Comment+Schema.swift"; path = "amplify/generated/models/Comment+Schema.swift"; sourceTree = "<group>"; };
 		A33EEEAF724345558BFB0F4B /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
 		A9D90AF02880488C8B4A694B /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				8BA06B66261C183F0058C0F7 /* SignUpView.swift */,
 				8BA06B69261C18830058C0F7 /* MainView.swift */,
 				8BA06B6E261C1BB00058C0F7 /* CameraView.swift */,
+				8BEE49B6262135670007168C /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				8BA06B8E261C236D0058C0F7 /* Task+Schema.swift in Sources */,
 				8BA06B92261C310B0058C0F7 /* Picture+Extensions.swift in Sources */,
 				8BA06B76261C1D880058C0F7 /* ImagePickerViewModel.swift in Sources */,
+				8BEE49B7262135670007168C /* ProfileView.swift in Sources */,
 				8BA06B64261C181E0058C0F7 /* SessionViewModel.swift in Sources */,
 				8BA06B51261C17630058C0F7 /* Picture.swift in Sources */,
 				8BA06B58261C17630058C0F7 /* Picture+Schema.swift in Sources */,
