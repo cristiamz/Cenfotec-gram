@@ -54,10 +54,10 @@
 		8BCF7490261D56B300F3860D /* RandomUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCF748F261D56B300F3860D /* RandomUserModel.swift */; };
 		B5EC8119DF70436A938B4669 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FB3027D54E0A44B28C0ED424 /* amplifyconfiguration.json */; };
 		BBFD078442194ACEB468005D /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080108D314CD4BCCAFC15647 /* Note.swift */; };
+		C93917A493514D4AAC164EEE /* Picture+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8B30C0AD42418AE8EF7A /* Picture+Extensions.swift */; };
 		DA9360F5516D403D85C5FBCE /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C08B74686A7408297B29610 /* User+Schema.swift */; };
 		DCA95D0C71A8432DB796BDDC /* Task+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4374D1B0B042739416619D /* Task+Schema.swift */; };
 		EABD34EE9A5E4487B861DB0C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CDC19225034FC2B86F5AB3 /* User.swift */; };
-		C93917A493514D4AAC164EEE /* Picture+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8B30C0AD42418AE8EF7A /* Picture+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,12 +112,12 @@
 		A33EEEAF724345558BFB0F4B /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
 		A9D90AF02880488C8B4A694B /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
 		B2FEE44F918605272A33E5D9 /* Pods_Cenfotec_gram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cenfotec_gram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C00D8B30C0AD42418AE8EF7A /* Picture+Extensions.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "Picture+Extensions.swift"; path = "amplify/generated/models/Picture+Extensions.swift"; sourceTree = "<group>"; };
 		DAD137375A16DE9761F6070B /* Pods-Cenfotec-gram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cenfotec-gram.debug.xcconfig"; path = "Target Support Files/Pods-Cenfotec-gram/Pods-Cenfotec-gram.debug.xcconfig"; sourceTree = "<group>"; };
 		DF05EB7F4B9C438BB87C3DF8 /* Task.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = Task.swift; path = amplify/generated/models/Task.swift; sourceTree = "<group>"; };
 		E80381BC9CB4410BA6F15738 /* Picture+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "Picture+Schema.swift"; path = "amplify/generated/models/Picture+Schema.swift"; sourceTree = "<group>"; };
 		EB4374D1B0B042739416619D /* Task+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "Task+Schema.swift"; path = "amplify/generated/models/Task+Schema.swift"; sourceTree = "<group>"; };
 		FB3027D54E0A44B28C0ED424 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
-		C00D8B30C0AD42418AE8EF7A /* Picture+Extensions.swift */ = {isa = PBXFileReference; name = "Picture+Extensions.swift"; path = "amplify/generated/models/Picture+Extensions.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,14 +285,6 @@
 				319E250879B169348310F3D5 /* Pods-Cenfotec-gram.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		19122667DBCF4D9A902621B3 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resources;
-			path = undefined;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -113,7 +113,10 @@ struct LoginView: View {
             case .success:
                 print("\(username) signed in")
                 DispatchQueue.main.async {
-                    withAnimation(.easeOut){self.sessionVM.logged = true}
+                    withAnimation(.easeOut){
+                        self.sessionVM.logged = true
+                        self.sessionVM.user = username
+                    }
                     print("Login In")
                 }
                 

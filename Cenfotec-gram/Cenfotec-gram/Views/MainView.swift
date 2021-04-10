@@ -9,8 +9,51 @@ import SwiftUI
 import Combine
 import Amplify
 
+struct DetailView: View {
+    let detailPicture: [Picture]
+    @State var imageCache = [String: UIImage?]()
+   
+    
+    var body: some View {
+        VStack{
+            
+            Image(uiImage: (imageCache[detailPicture.first?.imageKey ?? ""] ?? UIImage()) ?? UIImage())
+                .resizable()
+                .scaledToFit()
+            
+            Text("uploaded on \(detailPicture.first?.uploadDate ?? "")")
+            Spacer()
+        }
+        .onAppear{
+            self.downloadImages(for: detailPicture)
+        }
+    }
+    
+    func downloadImages (for pictures: [Picture]){
+        for picture in pictures {
+            
+            _ = Amplify.Storage.downloadData(key: picture.imageKey){
+                result in
+                switch result {
+                case .success (let imageData):
+                    let image = UIImage (data: imageData)
+                    DispatchQueue.main.async {
+                        self.imageCache[picture.imageKey] = image
+                    }
+                case .failure(let error):
+                    print (error)
+                }
+                
+            }
+            
+        }
+    }
+    
+}
+
 struct MainView: View {
     @StateObject var sessionVM = SessionViewModel()
+    //@ObservedObject var selectedPicture = Picture()
     @State var imageCache = [String: UIImage?]()
     @State var feed = [Picture]()
     @State var showUpload = false
@@ -23,10 +66,11 @@ struct MainView: View {
                     List {
                         ForEach(feed) {  picture in
                             VStack {
+                                NavigationLink(destination: DetailView(detailPicture: [picture])){
                                 Image(uiImage: (imageCache[picture.imageKey] ?? UIImage()) ?? UIImage())
                                     .resizable()
                                     .scaledToFit()
-                                
+                                }
                                 Text("\(picture.likes ?? 0) likes")
                                 Spacer()
                                 HStack{
